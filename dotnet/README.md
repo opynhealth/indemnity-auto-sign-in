@@ -1,4 +1,4 @@
-# Iris Auto Sign-in .NET Example
+# Indemnity Auto Sign-in .NET Example
 
 ## Instructions
 

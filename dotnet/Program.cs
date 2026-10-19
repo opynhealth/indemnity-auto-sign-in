@@ -2,16 +2,16 @@
 using System.Security.Cryptography;
 using System.Text;
 
-public class IrisAutoSignIn
+public class IndemnityAutoSignIn
 {
-    private readonly string rootUrl = "https://test-iris.opynhealth.com";
+    private readonly string rootUrl = "https://test-indemnity.opynhealth.com";
     private readonly string secretKey;
 
-    public IrisAutoSignIn(string secretKey, bool isProduction)
+    public IndemnityAutoSignIn(string secretKey, bool isProduction)
     {
         this.secretKey = secretKey;
         if(isProduction)
-            rootUrl = "https://iris.opynhealth.com";
+            rootUrl = "https://indemnity.opynhealth.com";
     }
 
     /// <summary>
@@ -56,7 +56,7 @@ public class Program
         bool isProduction = false;
         DateTime expiresAt = DateTime.UtcNow.AddHours(24);
 
-        var asi = new IrisAutoSignIn(secretKey, isProduction);
+        var asi = new IndemnityAutoSignIn(secretKey, isProduction);
 
         Console.WriteLine("## .NET Example ##");
         Console.WriteLine("Auto sign-in URL:");

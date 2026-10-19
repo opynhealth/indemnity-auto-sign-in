@@ -7,8 +7,8 @@ demonstrate how to securely integrate with the platform using HMAC
 authentication.
 
 - Auto sign-in URL: Use this URL to navigate a member directly into the 
-  Iris platform, fully authenticated
-- Embedded URL: Use this URL to embed Iris within your web portal
+  Indemnity platform, fully authenticated
+- Embedded URL: Use this URL to embed Indemnity within your web portal
 
 ## Table of Contents
 
@@ -68,7 +68,7 @@ To generate the URLs, configure the following variables:
 
 ## Build iframe
 
-To add the Opyn Iris member component to your web page, set the URL you have 
+To add the Opyn Indemnity member component to your web page, set the URL you have
 created above to the value of an iframe `src` attribute. You can adjust 
 the component's size with the iframe's height and width attributes. See the 
 example below, as well as the full list of all iframe options.  Adjust 

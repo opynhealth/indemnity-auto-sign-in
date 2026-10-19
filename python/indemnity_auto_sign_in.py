@@ -5,10 +5,10 @@ import base64
 from datetime import datetime, timedelta
 from urllib.parse import urlencode
 
-class IrisAutoSignIn:
+class IndemnityAutoSignIn:
     def __init__(self, secret_key, is_production=False):
         self.secret_key = secret_key
-        self.root_url = "https://iris.opynhealth.com" if is_production else "https://test-iris.opynhealth.com"
+        self.root_url = "https://indemnity.opynhealth.com" if is_production else "https://test-indemnity.opynhealth.com"
 
     def embed_url(self, client_id, group_id, member_id, expires_at):
         return self._url_build(f"{self.root_url}/embed", client_id, group_id, member_id, expires_at)
@@ -43,7 +43,7 @@ if __name__ == "__main__":
     is_production = False
     expires_at = datetime.utcnow() + timedelta(hours=24)
 
-    asi = IrisAutoSignIn(secret_key, is_production)
+    asi = IndemnityAutoSignIn(secret_key, is_production)
 
     print("## Python Example ##")
     print("Auto sign-in URL")

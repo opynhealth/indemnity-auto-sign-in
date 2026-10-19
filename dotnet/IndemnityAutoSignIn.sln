@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IrisAutoSignIn", "IrisAutoSignIn.csproj", "{D6B0914B-7831-6A61-063F-06B21C2B452F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndemnityAutoSignIn", "IndemnityAutoSignIn.csproj", "{D6B0914B-7831-6A61-063F-06B21C2B452F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

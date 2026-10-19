@@ -1,12 +1,12 @@
 const crypto = require("crypto");
 const { URL, URLSearchParams } = require("url");
 
-class IrisAutoSignIn {
+class IndemnityAutoSignIn {
   constructor(secretKey, isProduction = false) {
     this.secretKey = secretKey;
     this.rootUrl = isProduction
-      ? "https://iris.opynhealth.com"
-      : "https://test-iris.opynhealth.com";
+      ? "https://indemnity.opynhealth.com"
+      : "https://test-indemnity.opynhealth.com";
   }
 
   embedUrl(clientId, groupId, memberId, expiresAt) {
@@ -47,7 +47,7 @@ const memberId = "MEMBER_ID";
 const isProduction = false;
 const expiresAt = new Date(Date.now() + 24 * 60 * 60 * 1000); // 24 hours from now
 
-const asi = new IrisAutoSignIn(secretKey, isProduction);
+const asi = new IndemnityAutoSignIn(secretKey, isProduction);
 
 console.log("## Node Example ##");
 console.log("Auto sign-in URL:");

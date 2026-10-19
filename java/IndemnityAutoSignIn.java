@@ -8,13 +8,13 @@ import java.util.Base64;
 import java.util.Date;
 import java.util.TimeZone;
 
-public class IrisAutoSignIn {
+public class IndemnityAutoSignIn {
     private final String secretKey;
     private final String rootUrl;
 
-    public IrisAutoSignIn(String secretKey, boolean isProduction) {
+    public IndemnityAutoSignIn(String secretKey, boolean isProduction) {
         this.secretKey = secretKey;
-        this.rootUrl = isProduction ? "https://iris.opynhealth.com" : "https://test-iris.opynhealth.com";
+        this.rootUrl = isProduction ? "https://indemnity.opynhealth.com" : "https://test-indemnity.opynhealth.com";
     }
 
     public String embedUrl(String clientId, String groupId, String memberId, Date expiresAt) throws Exception {
@@ -69,7 +69,7 @@ public class IrisAutoSignIn {
             boolean isProduction = false;
             Date expiresAt = new Date(System.currentTimeMillis() + 24 * 60 * 60 * 1000); // 24 hours from now
 
-            IrisAutoSignIn asi = new IrisAutoSignIn(secretKey, isProduction);
+            IndemnityAutoSignIn asi = new IndemnityAutoSignIn(secretKey, isProduction);
 
             System.out.println("## Java Example ##");
             System.out.println("Auto sign-in URL:");
