@@ -60,6 +60,7 @@ To generate the URLs, configure the following variables:
 - `memberId`: (OPTIONAL)The member ID.
 - `isProduction`: A boolean flag to toggle between production and test environments.
 - `expiresAt`: The expiration date and time for the generated URLs in ISO 8601 format.
+- Generate URL here: https://test-indemnity.opynhealth.com/generate
 
 ### Notes
 
